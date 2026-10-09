@@ -1,0 +1,28 @@
+[project]
+name = "trishuli-flood-response"
+version = "0.1.0"
+description = "Satellite-based flood damage assessment (Sentinel-1/2, Copernicus DEM, pre-event OSM)"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy",
+  "pyyaml",
+  "requests",
+  "python-dotenv",
+  "shapely>=2",
+  "geopandas",
+  "pandas",
+  "pyproj",
+  "rasterio",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[tool.setuptools]
+packages = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110
