@@ -1,0 +1,20 @@
+name: flood
+channels: [conda-forge]
+dependencies:
+  - python=3.11
+  - gdal
+  - rasterio
+  - geopandas
+  - shapely>=2
+  - pyproj
+  - numpy
+  - scipy
+  - scikit-image
+  - networkx
+  - osmnx
+  - requests
+  - pyyaml
+  - python-dotenv
+  - pytest
+  - ruff
+  - pip
